@@ -7,9 +7,68 @@
     <link href="./output.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="bg-gray-200">
 
-    <h1 class="text-red-500">Hello world!</h1>
+    <header class="mx-auto w-3/4 h-24 flex items-center justify-between">
+        <div class="font-black text-blue-900">LOGO</div>
+        <div>
+            <ul>
+                <li class="space-x-4 font-medium">
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a>
+                    <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- banner -->
+        <div style="background: url('./images/hero-image-1.png'); height: 450px;">
+
+            <div class="container h-full flex flex-col items-center justify-center">
+                <div><h1 class="text-white text-4xl">Onde você quer ir?</h1></div>
+                <div><p class="pt-1 text-white text-xl">Escolha o estado e cidade para achar os melhores resorts.</p></div>
+                <div class="mt-7">
+                    <form class="space-x-4">
+                        <select class="bg-gray-200 px-3 py-2 border border-gray-300 rouded text-gray-600"><option value="">Escolha o estado</option></select>
+                        <select class="bg-gray-200 px-3 py-2 border border-gray-300 rouded text-gray-600"><option value="">Escolha cidade</option></select>
+                        <button class="items-center inline-flex text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rouded">
+                            Pesquisar resorts
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 ml-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                              </svg></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /banner -->
+        <!-- feature resort-->
+        <div class="flex sm:grid md:flex lg:flex w-3/4 py-12 mx-auto">
+            <div class="container text-gray-700  md:shrink-0">
+                <h3 class="text-xs font-medium py-1">RESORTE EM DESTAQUE</h3>
+                <h1 class="text-2xl font-medium py-1">Ecoresort Praia do Forte Bahia</h1>
+                <h4 class="text-xs font-medium py-1">Hotel qualidade 5 estrelas</h4>
+                <p class="py-2">Em 2016 coloquei como uma das metas do ano "Aprender a fazer 
+                um bom nhoque", mas foi só no final de 2018 que finalmente fiz 
+                um nhoque com cara e sabor de nhoque. Um prato que eu pensei...
+                </p>
+                <p class="py-2">Em 2016 coloquei como uma das metas do ano "Aprender a fazer 
+                um bom nhoque".
+                </p>
+                <button class="text-sm my-2 items-center inline-flex text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rouded">Solicitar reserva</button>
+            </div>
+            <div class="container md:shrink-0"><img src="./images/pexels-mikhail-nilov-8319468.jpg" alt="" style="border-radius: 20%;"></div>
+        </div>
+        <!-- /feature resort-->
+
+
+    </main>
+
+    
+    
     
 </body>
 </html>
